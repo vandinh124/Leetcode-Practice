@@ -6,11 +6,8 @@ var singleNumber = function(nums) {
         }else {
             my_map[key] =1;
         }
-        console.log("my_map\n", my_map)
-
     }
     let keys = Object.keys(my_map);
-    console.log("keys\n", keys)
     for(let key of keys){
         if(my_map[key] == 1){
             return key;
@@ -18,7 +15,6 @@ var singleNumber = function(nums) {
     }
     return ;
 };
-
 
  
 console.log(singleNumber([4,1,2,1,2]))
